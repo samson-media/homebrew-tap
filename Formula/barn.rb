@@ -1,13 +1,13 @@
 class Barn < Formula
   desc "Cross-platform job daemon for media processing"
   homepage "https://github.com/samson-media/barn"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/samson-media/barn/releases/download/v0.1.6/barn-macos-arm64"
-      sha256 "ff462bc37a11ba93bc6fa4eaf88f59438aa43b25195b1abf5d781890fcc74c78"
+      url "https://github.com/samson-media/barn/releases/download/v0.1.7/barn-macos-arm64"
+      sha256 "e26e4813af0fc0eaa41d6e0fbdd8fed4a1783f8c96985e7b3ee75b418ef4ea82"
 
       def install
         bin.install "barn-macos-arm64" => "barn"
@@ -15,8 +15,8 @@ class Barn < Formula
     end
 
     on_intel do
-      url "https://github.com/samson-media/barn/releases/download/v0.1.6/barn-macos-x64"
-      sha256 "406e91ebefcd39957a43ef7f7a03c00bf819eb12246401de4f5cfbe7a44c95e3"
+      url "https://github.com/samson-media/barn/releases/download/v0.1.7/barn-macos-x64"
+      sha256 "33915ea1d87cbbae377e9775a8344afe7f02a0c63c7481e535f31af5e9499d56"
 
       def install
         bin.install "barn-macos-x64" => "barn"
@@ -26,8 +26,8 @@ class Barn < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/samson-media/barn/releases/download/v0.1.6/barn-linux-arm64"
-      sha256 "93990a0e1c351d81838bd78096d2e78e5f181ae72b4653fae3f819522d7f7fb0"
+      url "https://github.com/samson-media/barn/releases/download/v0.1.7/barn-linux-arm64"
+      sha256 "2a412d486d0eee2c20a2bde8d770b533832106a374c09af4937fbfdfb08a16a6"
 
       def install
         bin.install "barn-linux-arm64" => "barn"
@@ -35,8 +35,8 @@ class Barn < Formula
     end
 
     on_intel do
-      url "https://github.com/samson-media/barn/releases/download/v0.1.6/barn-linux-x64"
-      sha256 "d0ac1feec899a705c77fc31ae8fc72b06137ae9c781953191d657dcb8b7aa5d5"
+      url "https://github.com/samson-media/barn/releases/download/v0.1.7/barn-linux-x64"
+      sha256 "0ca6cc9814077c4c9226c0e03d86d95c4acfb0afa46a387937dd8415059cc45c"
 
       def install
         bin.install "barn-linux-x64" => "barn"
