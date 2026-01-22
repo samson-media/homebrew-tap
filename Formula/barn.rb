@@ -1,13 +1,13 @@
 class Barn < Formula
   desc "Cross-platform job daemon for media processing"
   homepage "https://github.com/samson-media/barn"
-  version "0.1.1"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/samson-media/barn/releases/download/v#{version}/barn-macos-arm64"
-      sha256 "8566536b93acb2337233b9a87870ecd95a141c4fc41fe94b90a6f941eefab506"
+      sha256 "cfff9342866af500cf1cc63761ba6ff1223ae8a8cfbcffc39377a367062dfe4e"
 
       def install
         bin.install "barn-macos-arm64" => "barn"
@@ -18,7 +18,7 @@ class Barn < Formula
   on_linux do
     on_arm do
       url "https://github.com/samson-media/barn/releases/download/v#{version}/barn-linux-arm64"
-      sha256 "7c82b8de0d89ef08a8f5801a67f8d4e646836c8bc3ecc47a4655f00de341af8e"
+      sha256 "04d6ba7eccca5f96f292c8b1027316bab3debda7eb3888cb3b9456caa081301d"
 
       def install
         bin.install "barn-linux-arm64" => "barn"
@@ -27,7 +27,7 @@ class Barn < Formula
 
     on_intel do
       url "https://github.com/samson-media/barn/releases/download/v#{version}/barn-linux-x64"
-      sha256 "7ca3cdf7a0977887dbdd48847e513389eb01d44604f75e7d7817cf12b72d13fa"
+      sha256 "dbd82112dd91460de90c725f34bcb8d5cbb517f175c92c3e9c0d0526c583f2a4"
 
       def install
         bin.install "barn-linux-x64" => "barn"
